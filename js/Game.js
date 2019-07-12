@@ -63,13 +63,12 @@ class Game {
    */
     checkForWin() {
 
-        if ($('.rightLetter').length === $('.letter').length) {
+        if ($('.letter').length) {
             $('#game-over-message').text('You Win!');
             $('#overlay').prop('className', 'win');
             $('#overlay').show();
         }
     }
-
 
     /**
     * Increases the value of the missed property
@@ -85,7 +84,6 @@ class Game {
         }
 
     };
-
     /**
     * Displays game over message
     * @param {boolean} gameWon - Whether or not the user won the game
@@ -97,9 +95,7 @@ class Game {
         $('#overlay').show();
 
     };
-
     handleInteraction(letter) {
-
 
         if (this.activePhrase.checkLetter(letter)) {
 

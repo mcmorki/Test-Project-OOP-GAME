@@ -38,7 +38,7 @@ $('#btn__reset').click(() => {
     game.handleInteraction();
 
 });
-
+//  PASSED                Tested Code S T E P   9           **see Game.js for Step 9**
 
 
 

@@ -51,7 +51,7 @@ class Phrase {
     */
     checkLetter(letter) {
 
-        return this.phrase.include(letter);
+        return this.phrase.includes(letter);
     }
 
 
@@ -64,7 +64,7 @@ class Phrase {
     * @param (string) letter - Letter to display
     */
     showMatchedLetter() {
-        $('.rightLetter').css('color', 'black');
+        $('.key').css('color', 'black');
     }
 
 
